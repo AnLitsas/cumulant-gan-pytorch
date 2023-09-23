@@ -148,8 +148,8 @@ if __name__ == '__main__':
     argparser.add_argument('-e', '--epochs', type=int, default = 100000)
     argparser.add_argument('-lr', '--learning_rate', type=float, default = 0.0001)
     argparser.add_argument('-d', '--dataset', type = str, default = 'swiss_roll_2d_with_labels')
-    argparser.add_argument('-b', '--beta', type = str, default = 0.5)
-    argparser.add_argument('-g', '--gamma', type = float, default = 0.5)
+    argparser.add_argument('-b', '--beta', type = float, default = 0)
+    argparser.add_argument('-g', '--gamma', type = float, default = 0)
     
     args = argparser.parse_args()
     batch_size = args.batch_size
@@ -180,4 +180,4 @@ if __name__ == '__main__':
     optimizer_G = torch.optim.Adam(generator_model.parameters(), lr=learning_rate)
     optimizer_D = torch.optim.Adam(discriminator_model.parameters(), lr=learning_rate)
 
-    train_model(train_dataloader, generator_model, discriminator_model, optimizer_G, optimizer_D, epochs, result_path, dataset)
+    train_model(train_dataloader, generator_model, discriminator_model, optimizer_G, optimizer_D, epochs, result_path, dataset, beta, gamma)
