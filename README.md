@@ -36,5 +36,5 @@ This repository contains a PyTorch implementation of the Cumulant GAN model, as 
 ## Acknowledgments
 
 - The paper can be found [here](https://arxiv.org/pdf/2006.06625.pdf).
-- The first TensorFlow 1.x implementation is by Dip (one of the authors) and can be found [here](https://github.com/dipjyoti92/CumulantGAN/tree/main/).
+- Dip's implementation in TensorFlow 2 (Dip is one of the authors) can be found [here](https://github.com/dipjyoti92/CumulantGAN/tree/main/).
 - For a Tensorflow 2.x implementation (not by me), visit [this link](https://github.com/andrewkof/Cumulant-GAN).
