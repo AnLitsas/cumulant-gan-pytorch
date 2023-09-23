@@ -15,10 +15,19 @@ This repository contains a PyTorch implementation of the Cumulant GAN model, as 
 
 ## Results for Swiss roll dataset
 
-### Hellinger Distance
-
 <div align="center">
-  <img src="./Results/swiss_roll_2d_with_labels_0.5_0.5.gif" alt="Swiss Roll" width="400"/>
+  <table>
+    <tr>
+      <th>Wasserstein Distance</th>
+      <th>Reverse KLD Distance</th>
+      <th>Hellinger Distance</th>
+    </tr>
+    <tr>
+      <td><img src="./Results/swiss_roll_2d_with_labels_0_0.gif" alt="Wasserstein Distance" width="200"/></td>
+      <td><img src="./Results/swiss_roll_2d_with_labels_1_0.gif" alt="Reverse KLD Distance" width="200"/></td>
+      <td><img src="./Results/swiss_roll_2d_with_labels_0.5_0.5.gif" alt="Hellinger Distance" width="200"/></td>
+    </tr>
+  </table>
 </div>
 
 ---
