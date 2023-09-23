@@ -9,6 +9,10 @@ This repository contains a PyTorch implementation of the Cumulant GAN model, as 
 - TMM6 Dataset
 - Swiss roll dataset
 
+## Results for Swiss roll dataset
+
+1) Hellinger distance
+- ![til](./Results/swiss_roll_2d_with_labels_0.5_0.5.gif)
 
 ## Acknowledgments
 
