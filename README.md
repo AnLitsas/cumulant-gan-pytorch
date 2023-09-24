@@ -7,9 +7,10 @@ This repository contains a PyTorch implementation of the Cumulant GAN model, as 
 
 ## This implementation includes three toy examples:
 
+- Swiss roll dataset
 - GMM8 Dataset
 - TMM6 Dataset
-- Swiss roll dataset
+
 
 ---
 
@@ -19,12 +20,14 @@ This repository contains a PyTorch implementation of the Cumulant GAN model, as 
   <table>
     <tr>
       <th>Wasserstein Distance</th>
-      <th>Reverse KLD Distance</th>
+      <th>KL Distance</th>
+      <th>Reverse KL Distance</th>
       <th>Hellinger Distance</th>
     </tr>
     <tr>
-      <td><img src="./Results/swiss_roll_2d_with_labels_0_0.gif" alt="Wasserstein Distance" width="200"/></td>
-      <td><img src="./Results/swiss_roll_2d_with_labels_1_0.gif" alt="Reverse KLD Distance" width="200"/></td>
+      <td><img src="./Results/swiss_roll_2d_with_labels_0.0_0.0.gif" alt="Wasserstein Distance" width="200"/></td>
+      <td><img src="./Results/swiss_roll_2d_with_labels_0.0_1.0.gif" alt="KL Distance" width="200"/></td>
+      <td><img src="./Results/swiss_roll_2d_with_labels_1.0_0.0.gif" alt="Reverse KL Distance" width="200"/></td>
       <td><img src="./Results/swiss_roll_2d_with_labels_0.5_0.5.gif" alt="Hellinger Distance" width="200"/></td>
     </tr>
   </table>
@@ -34,10 +37,40 @@ This repository contains a PyTorch implementation of the Cumulant GAN model, as 
 
 ## Results for GMM8 dataset
 
-### Hellinger Distance
+<div align="center">
+  <table>
+    <tr>
+      <th>Wasserstein Distance</th>
+      <th>KL Distance</th>
+      <th>Reverse KL Distance</th>
+      <th>Hellinger Distance</th>
+    </tr>
+    <tr>
+      <td><img src="./Results/toy_example_gmm8_0.0_0.0.gif" alt="Wasserstein Distance" width="200"/></td>
+      <td><img src="./Results/toy_example_gmm8_0.0_1.0.gif" alt="KL Distance" width="200"/></td>
+      <td><img src="./Results/toy_example_gmm8_1.0_0.0.gif" alt="Reverse KL Distance" width="200"/></td>
+      <td><img src="./Results/toy_example_gmm8_0.5_0.5.gif" alt="Hellinger Distance" width="200"/></td>
+    </tr>
+  </table>
+</div>
+
+## Results for TMM6 dataset
 
 <div align="center">
-  <img src="./Results/toy_example_gmm8_0.5_0.5.gif" alt="GMM8" width="400"/>
+  <table>
+    <tr>
+      <th>Wasserstein Distance</th>
+      <th>KL Distance</th>
+      <th>Reverse KL Distance</th>
+      <th>Hellinger Distance</th>
+    </tr>
+    <tr>
+      <td><img src="./Results/toy_example_tmm6_0.0_0.0.gif" alt="Wasserstein Distance" width="200"/></td>
+      <td><img src="./Results/toy_example_tmm6_0.0_1.0.gif" alt="KL Distance" width="200"/></td>
+      <td><img src="./Results/toy_example_tmm6_1.0_0.0.gif" alt="Reverse KL Distance" width="200"/></td>
+      <td><img src="./Results/toy_example_tmm6_0.5_0.5.gif" alt="Hellinger Distance" width="200"/></td>
+    </tr>
+  </table>
 </div>
 
 ---
